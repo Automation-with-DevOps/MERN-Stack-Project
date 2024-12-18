@@ -30,10 +30,7 @@ spec:
           periodSeconds: 10
         env:
         - name: host
-          valueFrom:
-            secretKeyRef:
-              name: db-credentials
-              key: host
+          value: "database.mern.svc.cluster.local"
         - name: user
           valueFrom:
             secretKeyRef:
